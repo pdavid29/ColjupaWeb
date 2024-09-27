@@ -53,3 +53,6 @@ document.getElementById('logout').addEventListener('click', function () {
 document.getElementById('personal-info').addEventListener('click', function () {
     window.location.href = '../html/formulario.html';
 });
+document.getElementById('inforinst').addEventListener('click', function () {
+    window.location.href = '../html/infocolegio.html';
+});
