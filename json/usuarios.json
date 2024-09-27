@@ -1,0 +1,22 @@
+[
+    {
+        "usuario": "1001877151",
+        "contrasena": "7151",
+        "t_usuario": "admin"
+    },
+    {
+        "usuario": "32858085",
+        "contrasena": "8085",
+        "t_usuario": "secretaria"
+    },
+    {
+        "usuario": "1001916358",
+        "contrasena": "6358",
+        "t_usuario": "profesor"
+    },
+    {
+        "usuario": "1091982433",
+        "contrasena": "2433",
+        "t_usuario": "estudiante"
+    }
+]

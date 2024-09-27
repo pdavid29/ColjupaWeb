@@ -1,0 +1,34 @@
+{
+    "admin": [
+      {
+        "nombre": "Ray Ayala",
+        "usuario": "1001877151",
+        "email": "rayayala@gmail.com"
+      }
+    ],
+    "secretaria": [
+      {
+        "nombre": "Claudia García",
+        "usuario": "32858085",
+        "email": "claudia.garcia@gmail.com"
+      }
+    ],
+    "profesor": [
+      {
+        
+        "nombre": "Sharonn Perez",
+        "usuario": "1001916358",
+        "email": "sharonnperez@gmail.com",
+        "materias": ["Matemáticas", "Física"]
+      }
+    ],
+    "estudiante": [
+      {
+        "nombre": "Juan Rojas",
+        "usuario": "1091982433",
+        "email": "juan.rojas@escuela.com",
+        "grado": "10",
+        "seccion": "B"
+      }
+    ]
+  }
