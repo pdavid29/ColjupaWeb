@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLEGIO CRISTIANO JUAN PABLO APOSTOL S.A.S</title>
+    <link rel="stylesheet" href="../css/estilo_sec_ges_estudiantes.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="secretaria.html"><img src="../img/logocol1.png" alt="Logo del Colegio"></a>
+            <h1>Coljupa</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="sec_ges_estudiantes.html">Gestión de estudiante</a></li>
+                <li><a href="sec_ges_documentos.html">Documentos oficiales</a></li>
+                <li><a href="sec_ges_asistencia.html">Asistenca</a></li>
+                <li><a href="sec_ges_datos_academicos.html">Datos academicos</a></li>
+                <li><a href="sec_asistencia_usuarios.html">A. Padres y Profesores</a></li>
+                <li><a href="sec_ges_reportes.html">Reportes</a></li>
+                <li><a href="#" id="cerrarSesion">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gestionar-estudiantes">
+            <h2>Gestión de Estudiantes</h2>
+
+            <div class="acciones">
+                <button onclick="location.href='registrar_estudiante.html'">Registrar Estudiante</button>
+                <button onclick="location.href='buscar_estudiante.html'">Buscar Estudiante</button>
+                <button onclick="location.href='editar_estudiante.html'">Editar Estudiante</button>
+                <button onclick="location.href='eliminar_estudiante.html'">Eliminar Estudiante</button>
+            </div>
+
+            <div class="lista-estudiantes">
+                <h3>Listado de Estudiantes</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Grado</th>
+                            <th>Correo Electrónico</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>Juan Pérez</td>
+                            <td> 5</td>
+                            <td>juan.perez@mail.com</td>
+                            <td>
+                                <button>Editar</button>
+                                <button>Eliminar</button>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Colegio Cristiano Juan Pablo Apóstol S.A.S</p>
+    </footer>
+    <script src="../js/datossecre.js"></script>
+</body>
+
+</html>

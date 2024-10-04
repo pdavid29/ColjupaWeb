@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLEGIO CRISTIANO JUAN PABLO APOSTOL S.A.S</title>
+    <link rel="stylesheet" href="../css/estilo_sec_ges_documentos.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="secretaria.html"><img src="../img/logocol1.png" alt="Logo del Colegio"></a>
+            <h1>Coljupa</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="sec_ges_estudiantes.html">Gestión de estudiante</a></li>
+                <li><a href="sec_ges_documentos.html">Documentos oficiales</a></li>
+                <li><a href="sec_ges_asistencia.html">Asistenca</a></li>
+                <li><a href="sec_ges_datos_academicos.html">Datos academicos</a></li>
+                <li><a href="sec_asistencia_usuarios.html">A. Padres y Profesores</a></li>
+                <li><a href="sec_ges_reportes.html">Reportes</a></li>
+                <li><a href="#" id="cerrarSesion">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gestionar-documentos">
+            <h2>Gestión de Documentos</h2>
+            <p>Aquí puedes gestionar certificados, boletines y otros documentos oficiales del colegio.</p>
+
+            <div class="acciones">
+                <button>Subir Documento</button>
+                <button>Generar Certificado</button>
+                <button>Ver Boletines</button>
+            </div>
+
+            <div class="lista-documentos">
+                <h3>Documentos Recientes</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre del Documento</th>
+                            <th>Tipo</th>
+                            <th>Fecha de Subida</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Certificado de Estudios - Juan Pérez</td>
+                            <td>Certificado</td>
+                            <td>25/09/2024</td>
+                            <td>
+                                <button>Descargar</button>
+                                <button>Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Boletín Académico - María López</td>
+                            <td>Boletín</td>
+                            <td>20/09/2024</td>
+                            <td>
+                                <button>Descargar</button>
+                                <button>Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Colegio Cristiano Juan Pablo Apóstol S.A.S</p>
+    </footer>
+    <script src="../js/datossecre.js"></script>
+</body>
+
+</html>

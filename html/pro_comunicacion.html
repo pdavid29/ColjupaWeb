@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLEGIO CRISTIANO JUAN PABLO APOSTOL S.A.S</title>
+    <link rel="stylesheet" href="../css/estilo_profe_comunicacion.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="profesor.html"><img src="../img/logocol1.png" alt="Logo del Colegio"></a>
+            <h1>Coljupa</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="pro_ges_calificaciones.html">Calificaciones</a></li>
+                <li><a href="pro_ges_asistencia.html">Asistencia</a></li>
+                <li><a href="pro_comunicacion.html">Comunicación</a></li>
+                <li><a href="pro_informes_academicos.html">Informes</a></li>
+                <li><a href="pro_ges_tareas.html">Tareas</a></li>
+                <li><a href="pro_horarios_clases.html">Horarios</a></li>
+                <li><a href="pro_info_estudiantes.html">Información</a></li>
+                <li><a href="#" id="cerrarSesion">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Comunicación con Estudiantes y Padres</h2>
+
+        <section class="comunicacion">
+            <div class="formulario-comunicacion">
+                <h3>Enviar Nuevo Mensaje</h3>
+                <form action="#" method="post">
+                    <label for="destinatario">Seleccionar Destinatario:</label>
+                    <select id="destinatario" name="destinatario">
+                        <option value="todos">Todos</option>
+                        <option value="estudiante1">Estudiante 1</option>
+                        <option value="estudiante2">Estudiante 2</option>
+                        <option value="padre1">Padre de Estudiante 1</option>
+                        <option value="padre2">Padre de Estudiante 2</option>
+                    </select>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."
+                        required></textarea>
+
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+
+            <div class="mensajes-enviados">
+                <h3>Mensajes Enviados</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Destinatario</th>
+                            <th>Mensaje</th>
+                            <th>Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Todos</td>
+                            <td>Reunión el próximo lunes a las 9:00 AM</td>
+                            <td>02/10/2024</td>
+                        </tr>
+                        <tr>
+                            <td>Estudiante 1</td>
+                            <td>No olvides entregar la tarea de matemáticas mañana</td>
+                            <td>01/10/2024</td>
+                        </tr>
+                        <tr>
+                            <td>Padre de Estudiante 2</td>
+                            <td>Su hijo tiene una reunión de seguimiento esta semana</td>
+                            <td>30/09/2024</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Colegio Cristiano Juan Pablo Apóstol S.A.S</p>
+    </footer>
+    <script src="../js/datosprofe.js"></script>
+</body>
+
+</html>

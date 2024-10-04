@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Asistencia - Profesor</title>
+    <link rel="stylesheet" href="../css/estilo_profe_ges_asistencia.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="profesor.html"><img src="../img/logocol1.png" alt="Logo del Colegio"></a>
+            <h1>Coljupa</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="pro_ges_calificaciones.html">Calificaciones</a></li>
+                <li><a href="pro_ges_asistencia.html">Asistencia</a></li>
+                <li><a href="pro_comunicacion.html">Comunicación</a></li>
+                <li><a href="pro_informes_academicos.html">Informes</a></li>
+                <li><a href="pro_ges_tareas.html">Tareas</a></li>
+                <li><a href="pro_horarios_clases.html">Horarios</a></li>
+                <li><a href="pro_info_estudiantes.html">Información</a></li>
+                <li><a href="#" id="cerrarSesion">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Gestión de Asistencia</h2>
+        <section class="asistencia">
+            <form action="#" method="post">
+                <label for="curso">Seleccionar Curso:</label>
+                <select id="curso" name="curso">
+                    <option value="curso1">Curso 1</option>
+                    <option value="curso2">Curso 2</option>
+                    <option value="curso3">Curso 3</option>
+                </select>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Estudiante</th>
+                            <th>01/10/2024</th>
+                            <th>02/10/2024</th>
+                            <th>03/10/2024</th>
+                            <th>04/10/2024</th>
+                            <th>05/10/2024</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Estudiante 1</td>
+                            <td><input type="checkbox" name="asistencia[1][01/10/2024]" /></td>
+                            <td><input type="checkbox" name="asistencia[1][02/10/2024]" /></td>
+                            <td><input type="checkbox" name="asistencia[1][03/10/2024]" /></td>
+                            <td><input type="checkbox" name="asistencia[1][04/10/2024]" /></td>
+                            <td><input type="checkbox" name="asistencia[1][05/10/2024]" /></td>
+                        </tr>
+                        <tr>
+                            <td>Estudiante 2</td>
+                            <td><input type="checkbox" name="asistencia[2][01/10/2024]" /></td>
+                            <td><input type="checkbox" name="asistencia[2][02/10/2024]" /></td>
+                            <td><input type="checkbox" name="asistencia[2][03/10/2024]" /></td>
+                            <td><input type="checkbox" name="asistencia[2][04/10/2024]" /></td>
+                            <td><input type="checkbox" name="asistencia[2][05/10/2024]" /></td>
+                        </tr>
+                        <tr>
+                            <td>Estudiante 3</td>
+                            <td><input type="checkbox" name="asistencia[3][01/10/2024]" /></td>
+                            <td><input type="checkbox" name="asistencia[3][02/10/2024]" /></td>
+                            <td><input type="checkbox" name="asistencia[3][03/10/2024]" /></td>
+                            <td><input type="checkbox" name="asistencia[3][04/10/2024]" /></td>
+                            <td><input type="checkbox" name="asistencia[3][05/10/2024]" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <button type="submit">Guardar Asistencia</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Colegio Cristiano Juan Pablo Apóstol S.A.S</p>
+    </footer>
+    <script src="../js/datosprofe.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLEGIO CRISTIANO JUAN PABLO APOSTOL S.A.S</title>
+    <link rel="stylesheet" href="../css/estilo_admin_notificacion.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="administrador.html"><img src="../img/logocol1.png" alt="Logo del Colegio" ></a>
+            <h1>Coljupa</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="admin_ges_usuarios.html">Gestión de Usuarios</a></li>
+                <li><a href="admin_ges_cursos.html">Gestión de Cursos</a></li>
+                <li><a href="admin_documentacion.html">Documentación</a></li>
+                <li><a href="admin_reportes.html">Reportes</a></li>
+                <li><a href="admin_notificaciones.html">Notificaciones</a></li>
+                <li><a href="admin_configuraciones.html">Configuracion</a></li>
+                <li><a href="#" id="cerrarSesion">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="notifications">
+            <h2>Notificaciones</h2>
+            <div class="notification-actions">
+                <button id="createNotificationBtn">Crear Nueva Notificación</button>
+            </div>
+            <div class="notification-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Descripción</th>
+                            <th>Fecha de Envío</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Inicio de Clases</td>
+                            <td>Las clases comienzan el 01 de octubre de 2024.</td>
+                            <td>15/09/2024</td>
+                            <td>
+                                <button class="btnEdit">Editar</button>
+                                <button class="btnDelete">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Reunión de Padres</td>
+                            <td>Se realizará una reunión de padres el 20 de septiembre de 2024.</td>
+                            <td>10/09/2024</td>
+                            <td>
+                                <button class="btnEdit">Editar</button>
+                                <button class="btnDelete">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Vacaciones</td>
+                            <td>Las vacaciones de medio año son del 15 al 30 de diciembre de 2024.</td>
+                            <td>01/09/2024</td>
+                            <td>
+                                <button class="btnEdit">Editar</button>
+                                <button class="btnDelete">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Colegio Cristiano Juan Pablo Apóstol S.A.S</p>
+    </footer>
+    <script src="../js/datosadmin.js"></script>
+</body>
+
+</html>

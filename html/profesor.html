@@ -3,25 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilosprofe.css">
+    <link rel="stylesheet" href="../css/estilo_profe.css">
     <title>Página de Profesores</title>
 </head>
 <body>
-    <div class="container">
-        <nav class="sidebar">
-            <div class="menu-item">Registrar y Editar Calificaciones</div>
-            <div class="menu-item">Tomar Asistencia Diaria</div>
-            <div class="menu-item">Acceso a Información Académica de Estudiantes</div>
-            <div class="menu-item">Comunicación con Estudiantes y Padres</div>
-            <div class="menu-item" id="inforinst">Acerca de la institucion</div>
-            <div class="menu-item" id="personal-info">Información Personal</div>
-            <div class="menu-item" id="logout">Cerrar Sesión</div>
-        </nav>
-        <div class="main-content">
-            <h1>Bienvenido</h1>
-            <div id="user-info"></div>
+    <header>
+        <div class="logo-container">
+            <a href="profesor.html"><img src="../img/logocol1.png" alt="Logo del Colegio"></a>
+            <h1>Coljupa</h1>
         </div>
-    </div>
+        <nav>
+            <ul>
+                <li><a href="infocolegio.html">Información</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+                <li><a href="#" id="cerrarSesion">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <div class="card">
+                <h3>Gestión de Calificaciones</h3>
+                <p>Asignar, actualizar y exportar calificaciones de los estudiantes.</p>
+                <a href="pro_ges_calificaciones.html">Ir a Gestión de Calificaciones</a>
+            </div>
+            <div class="card">
+                <h3>Gestión de Asistencia</h3>
+                <p>Marcar asistencia y revisar el historial de los estudiantes.</p>
+                <a href="pro_ges_asistencia.html">Ir a Gestión de Asistencia</a>
+            </div>
+            <div class="card">
+                <h3>Comunicación con Estudiantes y Padres</h3>
+                <p>Enviar mensajes y recibir consultas de estudiantes y padres.</p>
+                <a href="pro_comunicacion.html">Ir a Comunicación</a>
+            </div>
+            <div class="card">
+                <h3>Visualización de Informes Académicos</h3>
+                <p>Ver y generar informes personalizados de rendimiento académico.</p>
+                <a href="pro_informes_academicos.html">Ir a Informes Académicos</a>
+            </div>
+            <div class="card">
+                <h3>Gestión de Tareas y Asignaciones</h3>
+                <p>Crear y gestionar tareas para los estudiantes.</p>
+                <a href="pro_ges_tareas.html">Ir a Gestión de Tareas</a>
+            </div>
+            <div class="card">
+                <h3>Horarios de Clases</h3>
+                <p>Ver el horario de clases y actualizaciones.</p>
+                <a href="pro_horarios_clases.html">Ir a Horarios</a>
+            </div>
+            <div class="card">
+                <h3>Información de Estudiantes</h3>
+                <p>Acceder a perfiles de estudiantes con sus datos académicos.</p>
+                <a href="pro_info_estudiantes.html">Ir a Información de Estudiantes</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Colegio Cristiano Juan Pablo Apóstol S.A.S</p>
+    </footer>
     <script src="../js/datosprofe.js"></script>
 </body>
+
 </html>

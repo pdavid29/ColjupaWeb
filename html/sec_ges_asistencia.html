@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLEGIO CRISTIANO JUAN PABLO APOSTOL S.A.S</title>
+    <link rel="stylesheet" href="../css/estilo_sec_ges_asistencia.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="secretaria.html"><img src="../img/logocol1.png" alt="Logo del Colegio"></a>
+            <h1>Coljupa</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="sec_ges_estudiantes.html">Gestión de estudiante</a></li>
+                <li><a href="sec_ges_documentos.html">Documentos oficiales</a></li>
+                <li><a href="sec_ges_asistencia.html">Asistenca</a></li>
+                <li><a href="sec_ges_datos_academicos.html">Datos academicos</a></li>
+                <li><a href="sec_asistencia_usuarios.html">A. Padres y Profesores</a></li>
+                <li><a href="sec_ges_reportes.html">Reportes</a></li>
+                <li><a href="#" id="cerrarSesion">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="toma-asistencia">
+            <h2>Toma de Asistencia</h2>
+            <p>Registra la asistencia de los estudiantes por curso y fecha.</p>
+            <div class="seleccion">
+                <label for="curso">Seleccionar curso:</label>
+                <select id="curso">
+                    <option value="primero">Primero</option>
+                    <option value="segundo">Segundo</option>
+                    <option value="tercero">Tercero</option>
+                    <option value="cuarto">Cuarto</option>
+                    <option value="quinto">Quinto</option>
+                    <option value="sexto">Sexto</option>
+                    <option value="septimo">Séptimo</option>
+                    <option value="octavo">Octavo</option>
+                    <option value="noveno">Noveno</option>
+                    <option value="decimo">Décimo</option>
+                    <option value="once">Once</option>
+                </select>
+
+                <label for="fecha">Seleccionar fecha:</label>
+                <input type="date" id="fecha">
+                <button id="buscar">Buscar</button>
+            </div>
+
+            <div class="lista-estudiantes">
+                <h3>Lista de Estudiantes</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre del Estudiante</th>
+                            <th>Estado de Asistencia</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Juan Pérez</td>
+                            <td>
+                                <select>
+                                    <option value="presente">Presente</option>
+                                    <option value="ausente">Ausente</option>
+                                    <option value="justificado">Justificado</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>María López</td>
+                            <td>
+                                <select>
+                                    <option value="presente">Presente</option>
+                                    <option value="ausente">Ausente</option>
+                                    <option value="justificado">Justificado</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="guardar-asistencia">
+                <button id="guardar">Guardar Asistencia</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Colegio Cristiano Juan Pablo Apóstol S.A.S</p>
+    </footer>
+    <script src="../js/datossecre.js"></script>
+</body>
+
+</html>

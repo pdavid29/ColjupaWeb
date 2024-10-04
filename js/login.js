@@ -1,50 +1,64 @@
-const jsonUrl = './json/usuarios.json';
+const OlvidarContrasena = function () {
+    alert("Contacte con el administrador para cambiar la contraseña.");
+}
 
-document.getElementById('loginform').addEventListener('submit', function(event) {
-    event.preventDefault();
-    
-    const usuario = document.getElementById('txtusuario').value;
-    const contraseña = document.getElementById('txtcontrasena').value;
+const url = 'https://api.jsonbin.io/v3/b/66fec624e41b4d34e43c6985';
+const apiKey = '66fec624e41b4d34e43c6985';
 
-    fetch(jsonUrl)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Error al cargar el archivo JSON');
-            }
-            return response.json();
-        })
-        .then(usuarios => {
-            let usuario_encontrado = false;
-            
+document.getElementById('loginform').addEventListener('submit', function (event) {
+    event.preventDefault(); 
 
+    const usuarioInput = document.getElementById('txtusuario').value;
+    const passwordInput = document.getElementById('txtcontrasena').value;
 
-            for (let i = 0; i < usuarios.length; i++) {
-                let user = usuarios[i];
-                let rol = user.t_usuario
-                
-                if (user.usuario === usuario && user.contrasena === contraseña) {
-                    usuario_encontrado = true;
-                    
-                    
-                    if (rol === 'admin') {
-                        window.location.href = './html/administrador.html';
-                    } else if (rol === 'secretaria') {
-                        window.location.href = './html/secretaria.html';
-                    } else if (rol === 'profesor') {
-                        window.location.href = './html/profesor.html';
-                    }else if (rol  === 'estudiante'){
-                        window.location.href = './html/estudiante.html'
+    fetch(url, {
+        method: 'GET',
+        headers: {
+            'X-Master-Key': apiKey
+        }
+    })
+        .then(response => response.json())
+        .then(data => {
+            const roles = data.record.roles; 
+
+            let usuarioValido = false;
+            let rolUsuario = '';
+            let datosUsuario = {}; 
+            function validarCredenciales(rol) {
+                for (let i = 0; i < roles[rol].length; i++) {
+                    const usuario = roles[rol][i];
+                    if (usuario.usuario === usuarioInput && usuario.password === passwordInput) {
+                        usuarioValido = true;
+                        rolUsuario = rol;
+                        datosUsuario = usuario;
+                        break;
                     }
-                    break; 
                 }
             }
+            validarCredenciales('administrador');
+            validarCredenciales('secretaria');
+            validarCredenciales('profesor');
+            validarCredenciales('estudiante');
 
-            if (!usuario_encontrado) {
-                alert('Usuario o contraseña incorrectos, o rol no válido.');
+            if (usuarioValido) {
+                localStorage.setItem('usuario', JSON.stringify(datosUsuario));
+                localStorage.setItem('rol', rolUsuario);
+                alert(`Bienvenido, ${datosUsuario.nombre} (${rolUsuario})`);
+                if (rolUsuario === 'administrador') {
+                    window.location.href = './html/administrador.html';
+                } else if (rolUsuario === 'secretaria') {
+                    window.location.href = './html/secretaria.html'; 
+                } else if (rolUsuario === 'profesor') {
+                    window.location.href = './html/profesor.html';
+                } else if (rolUsuario === 'estudiante') {
+                    window.location.href = './html/estudiante.html'; 
+                }
+            } else {
+                alert('Usuario o contraseña incorrectos');
             }
         })
         .catch(error => {
-            console.error('Error:', error);
-            alert('problema al cargar datos de usuario.');
+            console.error('Error al obtener el JSON:', error);
+            alert('Error en la autenticación. Inténtalo más tarde.');
         });
 });

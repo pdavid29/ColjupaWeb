@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLEGIO CRISTIANO JUAN PABLO APOSTOL S.A.S</title>
+    <link rel="stylesheet" href="../css/estilo_admin_ges_usuarios.css">
+</head>
+
+<body>
+    <header>
+    <div class="logo-container">
+        <a href="administrador.html"><img src="../img/logocol1.png" alt="Logo del Colegio" ></a>
+        <h1>Coljupa</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="admin_ges_usuarios.html">Gestión de Usuarios</a></li>
+            <li><a href="admin_ges_cursos.html">Gestión de Cursos</a></li>
+            <li><a href="admin_documentacion.html">Documentación</a></li>
+            <li><a href="admin_reportes.html">Reportes</a></li>
+            <li><a href="admin_notificaciones.html">Notificaciones</a></li>
+            <li><a href="admin_configuraciones.html">Configuracion</a></li>
+            <li><a href="#" id="cerrarSesion">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <section class="user-management">
+            <h2>Gestionar Usuarios</h2>
+            <div class="actions">
+                <button id="btnAddUser">Agregar Usuario</button>
+                <button id="btnEditUser">Editar Usuario</button>
+                <button id="btnDeleteUser">Eliminar Usuario</button>
+                <button id="btnViewUsers">Ver Usuarios</button>
+            </div>
+
+            <div class="user-list">
+                <h3>Lista de Usuarios</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Email</th>
+                            <th>Rol</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Juan Pérez</td>
+                            <td>juan.perez@ejemplo.com</td>
+                            <td>Profesor</td>
+                            <td>
+                                <button class="btnEdit">Editar</button>
+                                <button class="btnDelete">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ana Gómez</td>
+                            <td>ana.gomez@ejemplo.com</td>
+                            <td>Estudiante</td>
+                            <td>
+                                <button class="btnEdit">Editar</button>
+                                <button class="btnDelete">Eliminar</button>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Colegio Cristiano Juan Pablo Apóstol S.A.S</p>
+    </footer>
+    <script src="../js/datosadmin.js"></script>
+</body>
+
+</html>

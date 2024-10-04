@@ -1,88 +1,85 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-image: radial-gradient(circle at 87.5% 12.5%, #f2ffff 0, #e9f2f1 25%, #dddddd 50%, #d0c8cb 75%, #c6b7bd 100%);
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-}
-
-.form-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
+    min-height: 100vh;
     color: #333;
 }
 
-.form-group {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input, select {
+.info-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
-    box-sizing: border-box;
+    max-width: 600px;
+    text-align: left;
 }
 
-button {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    flex: 1;
+h2 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
 }
 
-button[type="submit"] {
-    background-color: #28a745; 
+.personal-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-button[type="submit"]:hover {
-    background-color: #218838;
+.personal-info strong {
+    font-weight: 600;
+    color: #555;
 }
 
-button#regresar {
-    background-color: #ffc107;
-}
-
-button#regresar:hover {
-    background-color: #e0a800;
-}
-
-button#corregir {
-    background-color: #dc3545; 
-}
-
-button#corregir:hover {
-    background-color: #c82333;
+span {
+    color: #444;
 }
 
 .form-buttons {
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: center;
+    gap: 20px;
 }
 
-button + button {
-    margin-left: 0;
+button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357ab8;
+}
+
+@media (max-width: 768px) {
+    .info-container {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .personal-info p {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 10px 15px;
+    }
 }

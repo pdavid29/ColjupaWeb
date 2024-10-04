@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLEGIO CRISTIANO JUAN PABLO APOSTOL S.A.S</title>
+    <link rel="stylesheet" href="../css/estilo_profe_informes_academicos.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="profesor.html"><img src="../img/logocol1.png" alt="Logo del Colegio"></a>
+            <h1>Coljupa</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="pro_ges_calificaciones.html">Calificaciones</a></li>
+                <li><a href="pro_ges_asistencia.html">Asistencia</a></li>
+                <li><a href="pro_comunicacion.html">Comunicación</a></li>
+                <li><a href="pro_informes_academicos.html">Informes</a></li>
+                <li><a href="pro_ges_tareas.html">Tareas</a></li>
+                <li><a href="pro_horarios_clases.html">Horarios</a></li>
+                <li><a href="pro_info_estudiantes.html">Información</a></li>
+                <li><a href="#" id="cerrarSesion">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Visualización de Informes Académicos</h2>
+
+        <section class="informes-academicos">
+            <h3>Informes de Rendimiento</h3>
+            <form action="#" method="post">
+                <label for="estudiante">Seleccionar Estudiante:</label>
+                <select id="estudiante" name="estudiante">
+                    <option value="estudiante1">Estudiante 1</option>
+                    <option value="estudiante2">Estudiante 2</option>
+                    <option value="estudiante3">Estudiante 3</option>
+                </select>
+
+                <button type="submit">Ver Informe</button>
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Asignatura</th>
+                        <th>Calificación</th>
+                        <th>Comentario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Matemáticas</td>
+                        <td>85</td>
+                        <td>Buen rendimiento, sigue así.</td>
+                    </tr>
+                    <tr>
+                        <td>Ciencias</td>
+                        <td>90</td>
+                        <td>Excelente comprensión de los temas.</td>
+                    </tr>
+                    <tr>
+                        <td>Historia</td>
+                        <td>78</td>
+                        <td>Necesita mejorar en la participación.</td>
+                    </tr>
+                    <tr>
+                        <td>Lengua Española</td>
+                        <td>88</td>
+                        <td>Buen desempeño, se recomienda leer más.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Colegio Cristiano Juan Pablo Apóstol S.A.S</p>
+    </footer>
+    <script src="../js/datosprofe.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(circle at 87.5% 12.5%, #f2ffff 0, #e9f2f1 25%, #dddddd 50%, #d0c8cb 75%, #c6b7bd 100%);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header .logo-container img {
+    height: 50px; 
+    width: auto;
+    margin-right: 15px;
+}
+
+header h1 {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #357ab8;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gestionar-estudiantes {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.gestionar-estudiantes h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.acciones {
+    margin-bottom: 30px;
+}
+
+.acciones button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.acciones button:hover {
+    background-color: #357ab8;
+}
+
+.lista-estudiantes {
+    margin-top: 30px;
+}
+
+.lista-estudiantes table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.lista-estudiantes th,
+.lista-estudiantes td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.lista-estudiantes th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+.lista-estudiantes tr:hover {
+    background-color: #f1f1f1;
+}
+
+.lista-estudiantes button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.lista-estudiantes button:hover {
+    background-color: #357ab8;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    color: #666;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

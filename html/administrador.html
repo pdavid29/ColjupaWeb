@@ -1,31 +1,67 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estiloadmin.css">
-    <title>Página de Administración</title>
+    <title>COLEGIO CRISTIANO JUAN PABLO APOSTOL S.A.S</title>
+    <link rel="stylesheet" href="../css/estilo_admin.css">
 </head>
 
 <body>
-    <div class="container">
-        <nav class="sidebar">
-            <div class="menu-item">Configurar Aplicación</div>
-            <div class="menu-item">Gestionar Cuentas de Usuarios</div>
-            <div class="menu-item">Supervisar Acceso y Actividades</div>
-            <div class="menu-item">Generar Reportes Académicos y de Asistencia</div>
-            <div class="menu-item">Mejoras y Cambios del Sistema</div>
-            <div class="menu-item" id="inforinst">Acerca de la institucion</div>
-            <div class="menu-item" id="personal-info">Información Personal</div>
-            <div class="menu-item" id="logout">Cerrar Sesión</div>
-        </nav>
-        <div class="main-content">
-            <h1>Bienvenid@ Administrad@r</h1>
-            <div id="user-info"></div>
+    <header>
+        <div class="logo-container">
+            <a href="administrador.html"><img src="../img/logocol1.png" alt="Logo del Colegio" ></a>
+            <h1>Coljupa</h1>
         </div>
-    </div>
+        <nav>
+            <ul>
+                <li><a href="infocolegio.html">Informacion</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+                <li><a href="#" id="cerrarSesion">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <div class="card">
+                <h3>Gestión de Usuarios</h3>
+                <p>Crear, editar o eliminar usuarios y asignar roles.</p>
+                <a href="admin_ges_usuarios.html">Ir a Gestión de Usuarios</a>
+            </div>
+            <div class="card">
+                <h3>Gestión de Cursos</h3>
+                <p>Crear, editar o eliminar cursos y asignar profesores.</p>
+                <a href="admin_ges_cursos.html">Ir a Gestión de Cursos</a>
+            </div>
+            <div class="card">
+                <h3>Configuración de la Aplicación</h3>
+                <p>Ajustar preferencias del sistema, gestionar roles y permisos, y personalizar opciones de la plataforma.</p>
+                <a href="admin_configuraciones.html">Ir a Configuración</a>
+            </div>
+            <div class="card">
+                <h3>Documentación</h3>
+                <p>Gestionar documentos institucionales y accesos.</p>
+                <a href="admin_documentacion.html">Ir a Documentación</a>
+            </div>
+            <div class="card">
+                <h3>Reportes</h3>
+                <p>Ver informes de rendimiento y estadísticas.</p>
+                <a href="admid_reportes.html">Ir a Reportes</a>
+            </div>
+            <div class="card">
+                <h3>Notificaciones</h3>
+                <p>Enviar mensajes y comunicados a usuarios.</p>
+                <a href="admin_notificaciones.html">Ir a Notificaciones</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Colegio Cristiano Juan Pablo Apóstol S.A.S</p>
+    </footer>
     <script src="../js/datosadmin.js"></script>
 </body>
+
 
 </html>

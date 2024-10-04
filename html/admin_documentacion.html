@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLEGIO CRISTIANO JUAN PABLO APOSTOL S.A.S</title>
+    <link rel="stylesheet" href="../css/estilo_admin_documentos.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="administrador.html"><img src="../img/logocol1.png" alt="Logo del Colegio" ></a>
+            <h1>Coljupa</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="admin_ges_usuarios.html">Gestión de Usuarios</a></li>
+                <li><a href="admin_ges_cursos.html">Gestión de Cursos</a></li>
+                <li><a href="admin_documentacion.html">Documentación</a></li>
+                <li><a href="admin_reportes.html">Reportes</a></li>
+                <li><a href="admin_notificaciones.html">Notificaciones</a></li>
+                <li><a href="admin_configuraciones.html">Configuracion</a></li>
+                <li><a href="#" id="cerrarSesion">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="documentation">
+            <h2>Gestión de Documentación</h2>
+            <div class="actions">
+                <button id="addDocBtn">Agregar Documento</button>
+                <button id="editDocBtn">Editar Documento</button>
+                <button id="deleteDocBtn">Eliminar Documento</button>
+            </div>
+            <div class="doc-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre del Documento</th>
+                            <th>Tipo</th>
+                            <th>Fecha de Publicación</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Manual del Estudiante</td>
+                            <td>PDF</td>
+                            <td>15/08/2024</td>
+                            <td>
+                                <button class="btnEdit">Editar</button>
+                                <button class="btnDelete">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Reglamento Interno</td>
+                            <td>PDF</td>
+                            <td>10/09/2024</td>
+                            <td>
+                                <button class="btnEdit">Editar</button>
+                                <button class="btnDelete">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Calendario Escolar</td>
+                            <td>Excel</td>
+                            <td>01/07/2024</td>
+                            <td>
+                                <button class="btnEdit">Editar</button>
+                                <button class="btnDelete">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Colegio Cristiano Juan Pablo Apóstol S.A.S</p>
+    </footer>
+    <script src="../js/datosadmin.js"></script>
+</body>
+
+</html>

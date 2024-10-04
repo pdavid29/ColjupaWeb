@@ -1,27 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilosestu.css">
-    <title>Página de Estudiantes</title>
+    <title>COLEGIO CRISTIANO JUAN PABLO APOSTOL S.A.S</title>
+    <link rel="stylesheet" href="../css/estilo_estu.css">
 </head>
+
 <body>
-    <div class="container">
-        <nav class="sidebar">
-            <div class="menu-item">Visualizar Notas y Asistencia</div>
-            <div class="menu-item">Descargar Documentos Oficiales</div>
-            <div class="menu-item">Horarios y Eventos Escolares</div>
-            <div class="menu-item">Chatbot de Ayuda</div>
-            <div class="menu-item" id="inforinst">Acerca de la institucion</div>
-            <div class="menu-item" id="personal-info">Información Personal</div>
-            <div class="menu-item" id="logout">Cerrar Sesión</div>
-        </nav>
-        <div class="main-content">
-            <h1>Bienvenido</h1>
-            <div id="user-info"></div>
+    <header>
+        <div class="logo-container">
+            <a href="estudiante.html"><img src="../img/logocol1.png" alt="Logo del Colegio"></a>
+            <h1>Coljupa</h1>
         </div>
-    </div>
+        <nav>
+            <ul>
+                <li><a href="infocolegio.html">Informacion</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+                <li><a href="#" id="cerrarSesion">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Bienvenido, Estudiante</h2>
+        <section class="dashboard">
+            <div class="card">
+                <h3>Visualizar Notas</h3>
+                <p>Consulta tus notas y rendimiento académico en tiempo real.</p>
+                <a href="estu_notas.html">Ir a Notas</a>
+            </div>
+            <div class="card">
+                <h3>Asistencia</h3>
+                <p>Revisa tu asistencia a clases y actividades escolares.</p>
+                <a href="estu_asistencia.html">Ir a Asistencia</a>
+            </div>
+            <div class="card">
+                <h3>Documentos Oficiales</h3>
+                <p>Descarga tus certificados y boletines de notas.</p>
+                <a href="descargar_documentos.html">Ir a Documentos</a>
+            </div>
+            <div class="card">
+                <h3>Horarios de Clases</h3>
+                <p>Consulta los horarios de tus clases y eventos escolares.</p>
+                <a href="horarios_clases.html">Ir a Horarios</a>
+            </div>
+        </section>
+
+        <div class="chatbot">
+            <h3>Chatbot de Soporte</h3>
+            <p>Haz preguntas y recibe respuestas rápidas.</p>
+            <a href="#" class="chatbot-btn">Iniciar Chat</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Colegio Cristiano Juan Pablo Apóstol S.A.S</p>
+    </footer>
     <script src="../js/datosestu.js"></script>
 </body>
+
 </html>

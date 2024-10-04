@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLEGIO CRISTIANO JUAN PABLO APOSTOL S.A.S</title>
+    <link rel="stylesheet" href="../css/estilo_ges_datos_academicos.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="secretaria.html"><img src="../img/logocol1.png" alt="Logo del Colegio"></a>
+            <h1>Coljupa</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="sec_ges_estudiantes.html">Gestión de estudiante</a></li>
+                <li><a href="sec_ges_documentos.html">Documentos oficiales</a></li>
+                <li><a href="sec_ges_asistencia.html">Asistenca</a></li>
+                <li><a href="sec_ges_datos_academicos.html">Datos academicos</a></li>
+                <li><a href="sec_asistencia_usuarios.html">A. Padres y Profesores</a></li>
+                <li><a href="sec_ges_reportes.html">Reportes</a></li>
+                <li><a href="#" id="cerrarSesion">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gestion-academica">
+            <h2>Gestión de Datos Académicos</h2>
+            <p>Recopila y administra los datos académicos de los estudiantes.</p>
+
+            <div class="seleccion">
+                <label for="curso">Seleccionar curso:</label>
+                <select id="curso">
+                    <option value="primero">Primero</option>
+                    <option value="segundo">Segundo</option>
+                    <option value="tercero">Tercero</option>
+                    <option value="cuarto">Cuarto</option>
+                    <option value="quinto">Quinto</option>
+                    <option value="sexto">Sexto</option>
+                    <option value="septimo">Séptimo</option>
+                    <option value="octavo">Octavo</option>
+                    <option value="noveno">Noveno</option>
+                    <option value="decimo">Décimo</option>
+                    <option value="once">Once</option>
+                </select>
+
+                <label for="materia">Seleccionar materia:</label>
+                <select id="materia">
+                    <option value="matematicas">Matemáticas</option>
+                    <option value="espanol">Español</option>
+                    <option value="ciencias">Ciencias</option>
+                    <option value="sociales">Sociales</option>
+                    <option value="ingles">Inglés</option>
+                </select>
+                <button id="buscar">Buscar</button>
+            </div>
+
+            <div class="lista-datos">
+                <h3>Datos Académicos</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre del Estudiante</th>
+                            <th>Nota</th>
+                            <th>Observaciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Juan Pérez</td>
+                            <td><input type="number" step="0.1" min="0" max="5" value="4.5"></td>
+                            <td><input type="text" value="Buen rendimiento"></td>
+                        </tr>
+                        <tr>
+                            <td>María López</td>
+                            <td><input type="number" step="0.1" min="0" max="5" value="3.8"></td>
+                            <td><input type="text" value="Debe mejorar en matemáticas"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="guardar-datos">
+                <button id="guardar">Guardar Datos Académicos</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Colegio Cristiano Juan Pablo Apóstol S.A.S</p>
+    </footer>
+    <script src="../js/datossecre.js"></script>
+</body>
+
+</html>

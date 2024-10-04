@@ -1,26 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>COLEGIO CRISTIANO JUAN PABLO APOSTOL S.A.S</title>
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
-    <div class="image-section"></div>
-
-    <div class="form-section">
-        <form class="login-form" id="loginform">
-            <h2>Iniciar Sesión</h2>
-            <input type="text" id="txtusuario" placeholder="Usuario" required>
-            <input type="password" id="txtcontrasena" placeholder="Contraseña" required>
-            <input type="submit" value="Iniciar Sesión">
-            <a href="#" onclick="OlvidarContrasena()">Olvidé mi contraseña</a>
-        </form>
+    <div class="container">
+        <div class="login-section">
+            <div class="logo-container">
+                <img src="./img/logocol1.png" alt="Logo del Colegio" class="logo">
+                <h3>Bienvenido a la Plataforma</h3>
+            </div>
+            <form class="login-form" id="loginform">
+                <input type="text" id="txtusuario" placeholder="Usuario" required>
+                <input type="password" id="txtcontrasena" placeholder="Contraseña" required>
+                <input type="submit" value="Iniciar Sesión">
+                <a href="#" onclick="OlvidarContrasena()">Olvidé mi contraseña</a>
+            </form>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="info-section">
+            <h1>COLEGIO CRISTIANO JUAN PABLO APOSTOL S.A.S</h1>
+            <p>Bienvenido a nuestra plataforma educativa, donde proporcionamos herramientas y recursos para el
+                aprendizaje y el desarrollo personal de nuestros estudiantes.</p>
+        </div>
     </div>
-</div> 
-
-<script src="./js/login.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="https://kit.fontawesome.com/0b8552ff00.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

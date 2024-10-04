@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLEGIO CRISTIANO JUAN PABLO APOSTOL S.A.S</title>
+    <link rel="stylesheet" href="../css/estilo_admin_reportes.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="administrador.html"><img src="../img/logocol1.png" alt="Logo del Colegio" ></a>
+            <h1>Coljupa</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="admin_ges_usuarios.html">Gestión de Usuarios</a></li>
+                <li><a href="admin_ges_cursos.html">Gestión de Cursos</a></li>
+                <li><a href="admin_documentacion.html">Documentación</a></li>
+                <li><a href="admin_reportes.html">Reportes</a></li>
+                <li><a href="admin_notificaciones.html">Notificaciones</a></li>
+                <li><a href="admin_configuraciones.html">Configuracion</a></li>
+                <li><a href="#" id="cerrarSesion">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reports">
+            <h2>Reportes de Rendimiento y Estadísticas</h2>
+            <div class="actions">
+                <button id="generateReportBtn">Generar Reporte</button>
+                <button id="downloadReportBtn">Descargar Reporte</button>
+            </div>
+            <div class="report-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tipo de Reporte</th>
+                            <th>Descripción</th>
+                            <th>Fecha de Generación</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Reporte Académico General</td>
+                            <td>Incluye el rendimiento académico de todos los estudiantes.</td>
+                            <td>01/09/2024</td>
+                            <td>
+                                <button class="btnDownload">Descargar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Reporte de Asistencia</td>
+                            <td>Resumen de asistencia por estudiante y por curso.</td>
+                            <td>15/09/2024</td>
+                            <td>
+                                <button class="btnDownload">Descargar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Reporte de Actividades Extraescolares</td>
+                            <td>Detalle de la participación en actividades extracurriculares.</td>
+                            <td>10/09/2024</td>
+                            <td>
+                                <button class="btnDownload">Descargar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Colegio Cristiano Juan Pablo Apóstol S.A.S</p>
+    </footer>
+    <script src="../js/datosadmin.js"></script>
+</body>
+
+</html>

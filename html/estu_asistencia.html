@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLEGIO CRISTIANO JUAN PABLO APOSTOL S.A.S</title>
+    <link rel="stylesheet" href="../css/estilo_estu_asistencia.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="estudiante.html"><img src="../img/logocol1.png" alt="Logo del Colegio"></a>
+            <h1>Coljupa</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="estu_notas.html">Ver notas</a></li>
+                <li><a href="estu_asistencia.html">Asistencia</a></li>
+                <li><a href="estu_documentos.html">Documentos</a></li>
+                <li><a href="estu_horarios.html">Horarios</a></li>
+                <li><a href="#" id="cerrarSesion">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="gestionar-asistencia">
+            <h2>Asistencia Escolar</h2>
+            <div class="acciones">
+                <button>Exportar a PDF</button>
+                <button>Imprimir</button>
+            </div>
+
+            <div class="lista-asistencia">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Estado</th>
+                            <th>Comentario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01/10/2024</td>
+                            <td>Presente</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>02/10/2024</td>
+                            <td>Ausente</td>
+                            <td>Justificación médica</td>
+                        </tr>
+                        <tr>
+                            <td>03/10/2024</td>
+                            <td>Presente</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>04/10/2024</td>
+                            <td>Ausente</td>
+                            <td>Injustificado</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Colegio Cristiano Juan Pablo Apóstol S.A.S</p>
+    </footer>
+    <script src="../js/datosestu.js"></script>
+</body>
+
+</html>

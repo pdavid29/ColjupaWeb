@@ -1,22 +1,91 @@
-[
-    {
-        "usuario": "1001877151",
-        "contrasena": "7151",
-        "t_usuario": "admin"
-    },
-    {
-        "usuario": "32858085",
-        "contrasena": "8085",
-        "t_usuario": "secretaria"
-    },
-    {
-        "usuario": "1001916358",
-        "contrasena": "6358",
-        "t_usuario": "profesor"
-    },
-    {
-        "usuario": "1091982433",
-        "contrasena": "2433",
-        "t_usuario": "estudiante"
+{
+    "roles": {
+      "administrador": [
+        {
+          "nombre": "Ray",
+          "apellido": "Ayala",
+          "documento": "1001877151",
+          "telefono": "3014005151",
+          "correo": "ray.ayala@admin.com",
+          "usuario": "1001877151",
+          "password": "7151",
+          "cargo": "Ingeniero IT"
+        },
+        {
+            "nombre": "Camilo",
+            "apellido": "Ahumada",
+            "documento": "1140895880",
+            "telefono": "3226941784",
+            "correo": "camilo.Ahumada@admin.com",
+            "usuario": "1140895880",
+            "password": "5880",
+            "cargo": "Ingeniero IT-2"
+          }
+      ],
+      "secretaria": [
+        {
+          "nombre": "Claudia ",
+          "apellido": "Hernández ",
+          "documento": "32858085",
+          "telefono": "3003898243",
+          "correo": "Claudia.Hernández@secretaria.com",
+          "usuario": "32858085",
+          "password": "8085",
+          "cargo": "Secretaria académica",
+          "horario": "Lunes a Viernes 8:00 - 16:00"
+        }
+      ],
+      "profesor": [
+        {
+          "nombre": "Sharon",
+          "apellido": "Pérez",
+          "documento": "1001916358",
+          "telefono": "3109876543",
+          "correo": "Sharon.Pérez@profesor.com",
+          "usuario": "1001916358",
+          "password": "6358",
+          "cargo": "Profesor",
+          "materias": ["Geografia", "Historia","Emprendimiento"],
+          "horario": "Lunes a Viernes 13:00 - 18:00"
+        },
+        {
+          "nombre": "Leonardo",
+          "apellido": "Ramos ",
+          "documento": "1002488965",
+          "telefono": "3244414330",
+          "correo": "Leonardo.Ramos@profesor.com",
+          "usuario": "1002488965",
+          "password": "8965",
+          "cargo": "Profesor",
+          "materias": ["Matematicas", "Geometria","Estadistica"],
+          "horario": "Lunes a Viernes 10:00 - 18:00"
+        }
+      ],
+      "estudiante": [
+        {
+          "nombre": "Juan",
+          "apellido": "Rojas",
+          "documento": "1091982433",
+          "telefono": "3121234567",
+          "correo": "juan.rojas@estudiante.com",
+          "usuario": "1091982433",
+          "password": "2433",
+          "cargo": "Estudiante",
+          "grado": "8",
+          "materias_inscritas": ["Matematicas", "Geometria","Estadistica","Geografia", "Historia","Emprendimiento"]
+        },
+        {
+          "nombre": "Pedro",
+          "apellido": "Gómez",
+          "documento": "9988776655",
+          "telefono": "3209876543",
+          "correo": "pedro.gomez@estudiante.com",
+          "usuario": "9988776655",
+          "password": "6655",
+          "cargo": "Estudiante",
+          "grado": "8",
+          "materias_inscritas": ["Matematicas", "Geometria","Estadistica","Geografia", "Historia","Emprendimiento"]
+        }
+      ]
     }
-]
+  }
